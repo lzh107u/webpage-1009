@@ -17,6 +17,7 @@ def timer():
 
 def render_index( request ):
     ret = timer()
+    
     if ret is True:
         return render( request = request, template_name = "giwpage/index3.html" )
     else:
