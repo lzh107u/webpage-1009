@@ -8,8 +8,8 @@ def timer():
     local_time = time.ctime( seconds )
     time_struct = time.localtime( seconds )
     
-    if time_struct.tm_mday >= 8:
-        # after 11/8, the stage changes into 'standard rate'
+    if time_struct.tm_mon > 11:
+        # after 11/30, the registration process can no longer be selected.
         return True
     else:
         return False
@@ -17,8 +17,8 @@ def timer():
 
 def render_index( request ):
     ret = timer()
-    
+    # ret = True
     if ret is True:
-        return render( request = request, template_name = "giwpage/index3.html" )
+        return render( request = request, template_name = "giwpage/index4.html" )
     else:
-        return render( request = request, template_name = 'giwpage/index2.html' )
+        return render( request = request, template_name = 'giwpage/index3.html' )
