@@ -103,7 +103,7 @@
     <path d="M0 0h24v24H0z" fill="none"/>
     <path d="M18 8c0-3.31-2.69-6-6-6S6 4.69 6 8c0 4.5 6 11 6 11s6-6.5 6-11zm-8 0c0-1.1.9-2 2-2s2 .9 2 2-.89 2-2 2c-1.1 0-2-.9-2-2zM5 20v2h14v-2H5z"/>
     </svg> -->
-  <symbol id="map" viewBox="0 0 48 48">
+  <symbol id="map" viewBox="0 0 24 24">
     <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" fill="#000000">
       <rect fill="none" height="24" width="24"/>
         <g>
@@ -112,7 +112,7 @@
         </g>
       </svg>
   </symbol>
-  <symbol id="luggage" viewBox="0 0 48 48">
+  <symbol id="luggage" viewBox="0 0 24 24">
     <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" fill="#000000">
       <rect fill="none" height="24" width="24"/>
         <g>
@@ -195,14 +195,31 @@
   <!-- row flex-lg-row-reverse align-items-center g-5 py-5 -->
   <div class="px-4 pt-5 my-5 text-center ">
     <h1 class="display-4 fw-bold">Traffic and Hotel information</h1>
-    <p class="lead">Click the buttons below and view the information.</p>
-    <div class="col-lg-6 mx-auto row flex-lg-row-reverse align-items-center g-5 py-5"> <!-- mx-auto 用於留左側空白 -->
-      <div class="col-10 col-sm-8 col-lg-6">
-        <a href={% static "giwpage/HotelInfo.pdf" %}><svg class="bi" width="400" height="400"><use xlink:href="#luggage"/></svg></a>
-      </div>
-      
-      <div class="col-lg-6">
-        <a href={% static "giwpage/TrafficInformation.pdf" %}><svg class="bi" width="400" height="400"><use xlink:href="#map"/></svg></a>
+    <p class="lead">Click the icons below to view the information.</p>
+    <div class="px-2 my-10 text-center">
+      <div class="row flex-lg-row align-items-center">
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-6"></div>
+            <div class="col-md-6 text-center">
+              <a href={% static "giwpage/TrafficInformation.pdf" %}>
+                <svg class="bi" width="200" height="200"><use xlink:href="#luggage"/></svg>
+                <h3>Hotel</h3>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 align-self-center">
+          <div class="row">
+            <div class="col-md-6">
+              <a href={% static "giwpage/TrafficInformation.pdf" %}>
+                <svg class="bi" width="200" height="200"><use xlink:href="#map"/></svg>
+                <h3>Traffic</h3>
+              </a>
+            </div>
+            <div class="col-md-6"></div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -253,13 +270,13 @@
   <div class="container col-xxl-8 px-4 py-5">
     <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
       <div class="col-10 col-sm-8 col-lg-6">
-        <img src={% static "giwpage/Nezha.png" %} class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
-        <p class="lead">Source: 王爺入口網</p>
+        <img src={% static "giwpage/nezha2.jpg" %} class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+        <p class="lead">Source: Wikipidea</p>
       </div>
       <div class="col-lg-6">
         <h1 class="display-5 fw-bold lh-1 mb-3">Open Ceremony: Nezha</h1>
         <p class="lead">As a protection diety in the Chinese folk lore, the official name of Nezha is "Marshal of Central Altar". 
-          It's believed that the origin of Nezha was based on Hindu mythology, and it was spread into China with Buddhism culture. 
+          It's believed that the origin of Nezha was based on Hindu mythology and it was spread into China with Buddhism culture. 
           Combined with traditional folk dance and modern pop music, a new subcultural dance performance called "Techno Prince Nezha" is now popular in Taiwan.</p>
       </div>
     </div>
@@ -277,7 +294,7 @@
       <!-- introduction or other information. -->
       <div class="col-lg-6">
         <h1 class="display-5 fw-bold lh-1 mb-3">Chihkan Tower</h1>
-        <p class="lead">Built as Fort Provintia by the Dutch in 1652, it was originally the location of the administrative center of the United East India Company( VOC ). 
+        <p class="lead">Built as Fort Provintia by the Dutch in 1652, it was originally the location of the administrative center of the United East India Company(VOC). 
           Most of its structure that we can see nowadays was added or modified by the Chinese in the past 300 years. 
         </p>
         <div class="d-grid gap-2 d-md-flex justify-content-md-start">
@@ -293,7 +310,7 @@
       
       <div class="col-lg-6">
         <h1 class="display-5 fw-bold lh-1 mb-3">Anping Old Fort</h1>
-        <p class="lead">The Anping Fort, originally named "Fort Zeelandia", was built in 1624 by a combined military and commercial force of the United East India Company( VOC ) as a defensive stronghold.</p>
+        <p class="lead">The Anping Fort, originally named "Fort Zeelandia", was built in 1624 by a combined military and commercial force of the United East India Company(VOC) as a defensive stronghold.</p>
         <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
           <a href="https://www.twtainan.net/en/attractions/detail/4493"><button type="button" class="btn btn-outline-secondary btn-lg px-4">Visit Website</button></a>
         </div>
@@ -348,16 +365,16 @@
   </div>
   <div class="b-example-divider"></div>
   <div class="container col-xxl-8 px-4 py-5">
-    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+    <div class="row flex-lg-row-reverse g-5 py-5">
       
-      <div class="col-lg-6">
+      <div class="col-lg-6 align-items-center">
         <h1 class="display-5 fw-bold lh-1 mb-3">Nabeyaki Egg Noodle</h1>
         <p class="lead">The dish gets its name with the specific cooking style in which the ingredients are cooked and served in small clay pots.
           It's called "Kuo Shao Yi Mian" in Taiwanese.
         </p>
       </div>
 
-      <div class="col-10 col-sm-8 col-lg-6">
+      <div class="col-10 col-sm-8 col-lg-6 align-items-center">
         <img src={% static "giwpage/nabeyaki2.jpg" %} class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
       </div>
     </div>
@@ -374,7 +391,7 @@
       <div class="col-lg-6">
         <h1 class="display-5 fw-bold lh-1 mb-3">Khong bah png (braised pork rice)</h1>
         <p class="lead">They are typically made of pork belly and served on top of rice. 
-          It was originally a Fujianese cuisine from Quanzhou, China, and was brought to Taiwan by immigrants. 
+          It was originally a Fujianese cuisine from Quanzhou, China and was brought to Taiwan by immigrants. 
         </p>
       </div>
 
@@ -406,7 +423,7 @@
       <!-- introduction or other information. -->
       <div class="col-lg-6">
         <h1 class="display-5 fw-bold lh-1 mb-3">Shaved Ice</h1>
-        <p class="lead">It a ice-based desserts made of fine shavings of ice or finely crushed ice and sweet condiments or syrups.
+        <p class="lead">It's a ice-based desserts made of fine shavings of ice or finely crushed ice and sweet condiments or syrups.
           In Tainan, fruit, condensed milk and tapioca are often added into shaved ice to have a better flavor.
         </p>
       </div>
