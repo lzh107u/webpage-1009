@@ -92,6 +92,14 @@
   <symbol id="youtube" viewBox="0 0 16 16">
       <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
   </symbol>
+  <symbol id="traffic" viewBox="0 0 24 24">
+    <path xmlns="http://www.w3.org/2000/svg" d="M18.92,9.01C18.72,8.42,18.16,8,17.5,8h-11C5.84,8,5.29,8.42,5.08,9.01L3,15v8c0,0.55,0.45,1,1,1h1c0.55,0,1-0.45,1-1v-1 h12v1c0,0.55,0.45,1,1,1h1c0.55,0,1-0.45,1-1v-8L18.92,9.01z M6.85,10h10.29l1.04,3H5.81L6.85,10z M6,17.5C6,16.67,6.67,16,7.5,16 S9,16.67,9,17.5S8.33,19,7.5,19S6,18.33,6,17.5z M15,17.5c0-0.83,0.67-1.5,1.5-1.5s1.5,0.67,1.5,1.5S17.33,19,16.5,19 S15,18.33,15,17.5z M12,6.36L9.17,3.54l1.41-1.41L12,3.54L15.54,0l1.41,1.41L12,6.36z"/>
+  </symbol>
+  <symbol id="hotel" viewBox="0 0 24 24">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M7 13c1.66 0 3-1.34 3-3S8.66 7 7 7s-3 1.34-3 3 1.34 3 3 3zm12-6h-8v7H3V5H1v15h2v-3h18v3h2v-9c0-2.21-1.79-4-4-4z"/>
+  </symbol>
+
 </svg>
 
 
@@ -173,12 +181,12 @@
           </thead>
           <tbody>
               <tr>
-                  <td>Traffic</td>
+                  <td>Traffic<div><svg class="bi" width="24" height="24"><use xlink:href="#traffic"/></svg></div></td>
                   <td><a href={% static "giwpage/TrafficInformation.pdf" %}>here</a></td>
                   
               </tr>
               <tr>
-                  <td>Hotel</td>
+                  <td>Hotel<div><svg class="bi" width="24" height="24"><use xlink:href="#hotel"/></svg></div></td>
                   <td><a href={% static "giwpage/HotelInfo.pdf" %}>here</a></td>
               </tr>
           </tbody>
@@ -227,14 +235,173 @@
       <!-- display image. -->
       <div class="col-10 col-sm-8 col-lg-6">
         <img src={% static "giwpage/museum.jpg" %} class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
-        <!--<p class="lead">From Wikipidea</p>-->
+        <p class="lead">Source: Wikipidea</p>
       </div>
 
     </div>
   </div>
 
   <div class="b-example-divider"></div>
+  <div class="container col-xxl-8 px-4 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img src={% static "giwpage/Nezha.png" %} class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+        <p class="lead">Source: 王爺入口網</p>
+      </div>
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold lh-1 mb-3">Open Ceremony: Nezha</h1>
+        <p class="lead">As a protection diety in the Chinese folk lore, the official name of Nezha is "Marshal of Central Altar". 
+          It's believed that the origin of Nezha was based on Hindu mythology, and it was spread into China with Buddhism culture. 
+          Combined with traditional folk dance and modern pop music, a new subcultural dance performance called "Techno Prince Nezha" is now popular in Taiwan.</p>
+      </div>
+    </div>
+  </div>
+  <div class="b-example-divider"></div>
+  <div class="px-4 pt-5 my-5 text-center">
+    <h1 class="display-4 fw-bold">Chihkan Tower</h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4">Built as Fort Provintia by the Dutch in 1652, it was originally the location of the administrative center of the United East India Company( VOC ). 
+        Most of its structure that we can see nowadays was added or modified by the Chinese in the past 300 years. </p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+        <a href="https://www.twtainan.net/en/attractions/detail/4396"><button type="button" class="btn btn-outline-secondary btn-lg px-4">Visit Website</button></a>
+      </div>
+    </div>
+    <div class="overflow-hidden" style="max-height: 50vh;">
+      <div class="container px-5">
+        <p class="lead">Source: Wikipidea</p>
+        <img src={% static "giwpage/fort_provincia.jpg" %} class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy">
+      </div>
+    </div>
+  </div>
 
+  
+
+  <div class="container col-xxl-8 px-4 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold lh-1 mb-3">Anping Old Fort</h1>
+        <p class="lead">The Anping Fort, originally named "Fort Zeelandia", was built in 1624 by a combined military and commercial force of the United East India Company( VOC ) as a defensive stronghold.</p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+          <a href="https://www.twtainan.net/en/attractions/detail/4493"><button type="button" class="btn btn-outline-secondary btn-lg px-4">Visit Website</button></a>
+        </div>
+      </div>
+
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img src={% static "giwpage/fort_z.jpg" %} class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+        <p class="lead">Source: Wikipidea</p>
+      </div>
+    </div>
+  </div>
+  <div class="container col-xxl-8 px-4 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <!-- display image. -->
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img src={% static "giwpage/ctemple_gate.jpg" %} class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+        <p class="lead">Source: Wikipidea</p>
+      </div>
+      
+      <!-- introduction or other information. -->
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold lh-1 mb-3">Confucian Temple</h1>
+        <p class="lead">Named after one of the greatest educator and philosopher in Chinese history called Confucius, the Confucian Temple was built in 1666 during the Koxinya Dynasty
+          as a religious and educational site. Nowadays, students around Taiwan still come to Confucian Temple to pray for good luck on their tests.
+
+        </p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+          <a href="https://eng.taiwan.net.tw/m1.aspx?sNo=0002119&id=78"><button type="button" class="btn btn-outline-secondary btn-lg px-4">Visit Website</button></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="container col-xxl-8 px-4 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold lh-1 mb-3">National Museum of Taiwan Literature</h1>
+        <p class="lead">Opened in 2003, the NMTL is a significant cultural center, which is dedicated to collecting, researching and promoting Taiwanese literature.
+          The building was built in 1916 during the Japanese rule of Taiwan, served as the administration center in Tainan.
+        </p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+          <a href="https://www.nmtl.gov.tw/en/"><button type="button" class="btn btn-outline-secondary btn-lg px-4">Visit Website</button></a>
+        </div>
+      </div>
+
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img src={% static "giwpage/NMTL.jpg" %} class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+        <p class="lead">Source: Wikipidea</p>
+      </div>
+    </div>
+  </div>
+  <div class="b-example-divider"></div>
+  <div class="container col-xxl-8 px-4 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold lh-1 mb-3">Nabeyaki Egg Noodle</h1>
+        <p class="lead">The dish gets its name with the specific cooking style in which the ingredients are cooked and served in small clay pots.
+          It's called "Kuo Shao Yi Mian" in Taiwanese.
+        </p>
+      </div>
+
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img src={% static "giwpage/nabeyaki2.jpg" %} class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+      </div>
+    </div>
+  </div>
+  <div class="container col-xxl-8 px-4 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <!-- display image. -->
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img src={% static "giwpage/kongroufan.jpg" %} class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+        <p class="lead"></p>
+      </div>
+      
+      <!-- introduction or other information. -->
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold lh-1 mb-3">Khong bah png (braised pork rice)</h1>
+        <p class="lead">They are typically made of pork belly and served on top of rice. 
+          It was originally a Fujianese cuisine from Quanzhou, China, and was brought to Taiwan by immigrants. 
+        </p>
+      </div>
+
+    </div>
+  </div>
+  <div class="container col-xxl-8 px-4 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold lh-1 mb-3">Apricot Kernel Tofu</h1>
+        <p class="lead">Also called Annin Tofu or Xingren Tofu, it's a soft, jellied traditional Beijing summer dessert made of apricot kernel milk, agar and sugar.
+        </p>
+      </div>
+
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img src={% static "giwpage/tofu.jpg" %} class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+        <p class="lead">Source: Tainan City Gov</p>
+      </div>
+    </div>
+  </div>
+  <div class="container col-xxl-8 px-4 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <!-- display image. -->
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img src={% static "giwpage/ice.jpg" %} class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+        
+      </div>
+      
+      <!-- introduction or other information. -->
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold lh-1 mb-3">Shaved Ice</h1>
+        <p class="lead">It a ice-based desserts made of fine shavings of ice or finely crushed ice and sweet condiments or syrups.
+          In Tainan, fruit, condensed milk and tapioca are often added into shaved ice to have a better flavor.
+        </p>
+      </div>
+
+    </div>
+  </div>
+  <div class="b-example-divider"></div>
 </main>
 
 
